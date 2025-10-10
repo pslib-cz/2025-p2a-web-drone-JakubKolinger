@@ -4,14 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap') layer(init);
 
-
-@layer design {
+@layer init {
     :root {
         color-scheme: light dark;
         --header-bg-color: light-dark(#3B3E40, #3B3E40);
-        --header-text-color: light-dark(#FFF,#FFF);
+        --header-text-color: light-dark(#fff,#fff);
         --primary-color: light-dark(#66D4D4, #4a9797);
-        --secondary-color: light-dark(#FFF,#000);
+        --secondary-color: light-dark(#FFF,#4b4b4b);
         --text-color:  light-dark(#000,#FFF);
         --bg-color: light-dark(#fff, #000);
         
@@ -21,8 +20,15 @@
         font-size: 100%;
         color: var(--text-color);
     }
+}
+
+@layer design {
     body {
         background-color: var(--bg-color);
+    }
+    h1 {
+        font-size: 4rem;
+        font-weight: extra-bold;
     }
     .header {
         background-image: url(../images/header-2560w.webp);
@@ -31,12 +37,50 @@
         background-color: var(--header-bg-color);
         color: var(--header-text-color);
         line-height: 1.5;
+        padding: 1em;
     }
     .header_nav {
         text-align: center;
     }
     .header_link {
+
+    }
+    .header_intro {
+        margin-top: 10vh;
+    }
+    .button {
+        text-decoration: none;
         display: inline-block;
-        padding-top: 1em;
+        border-radius: .5rem;
+        padding: 0.75em 2em;
+    }
+    .button--light {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+    }
+    .img-fluid {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .img-block {
+        display: block;
+        margin: 0;
+    }
+    .img-block_caption {
+        text-align: center;
+        margin-top: 0.5em;
+    }
+    .paramas {
+        padding: 1em;
+    }
+    .info-block {
+        padding: 1em;
+    }
+    .heading {
+
+    }
+    .heading--h3 {
+        
     }
 }
