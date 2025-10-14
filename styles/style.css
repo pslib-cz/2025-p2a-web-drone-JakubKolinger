@@ -23,12 +23,13 @@
 }
 
 @layer design {
+    main {
+        padding: 1rem;
+        max-width: 960px;
+        margin: 0 auto;
+    }
     body {
         background-color: var(--bg-color);
-    }
-    h1 {
-        font-size: 4rem;
-        font-weight: extra-bold;
     }
     .header {
         background-image: url(../images/header-2560w.webp);
@@ -59,11 +60,6 @@
         background-color: var(--primary-color);
         color: var(--text-color-light);
     }
-    main {
-        padding: 1rem;
-        max-width: 960px;
-        margin: 0 auto;
-    }
     .img-fluid {
         display: block;
         width: 100%;
@@ -80,12 +76,20 @@
     .paramas {
         padding: 1em;
     }
-    .heading {
-        font-family: 'Open Sans', sans-serif;
+    h1 {
+        font-size: 4rem;
+        font-weight: extra-bold;
+    }
+    h2{
+        font-size: 2.25rem;
         font-weight: bold;
     }
     .heading--h3 {
         font-size: 1.125em;
+    }
+    .heading {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
     }
     .info-block {
         margin: 1em 0;
