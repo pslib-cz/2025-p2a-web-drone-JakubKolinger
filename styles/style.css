@@ -11,8 +11,8 @@
         --header-text-color: light-dark(#fff,#fff);
         --primary-color: light-dark(#66D4D4, #4a9797);
         --secondary-color: light-dark(#FFF,#4b4b4b);
-        --text-color:  light-dark(#000,#FFF);
-        --bg-color: light-dark(#fff, #000);
+        --text-color:  light-dark(#181818,#eeeded);
+        --bg-color: light-dark(#7c7b7b, #1f1e1e);
         
     }
     html {
@@ -42,9 +42,6 @@
     .header_nav {
         text-align: center;
     }
-    .header_link {
-
-    }
     .header_intro {
         margin-top: 10vh;
     }
@@ -57,6 +54,15 @@
     .button--light {
         background-color: var(--secondary-color);
         color: var(--text-color);
+    }
+    .button--primary{
+        background-color: var(--primary-color);
+        color: var(--text-color-light);
+    }
+    main {
+        padding: 1rem;
+        max-width: 960px;
+        margin: 0 auto;
     }
     .img-fluid {
         display: block;
@@ -74,13 +80,37 @@
     .paramas {
         padding: 1em;
     }
-    .info-block {
-        padding: 1em;
-    }
     .heading {
-
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
     }
     .heading--h3 {
-        
+        font-size: 1.125em;
+    }
+    .info-block {
+        margin: 1em 0;
+        padding: 1rem;
+        border: 3px solid var(--primary-color);
+    }
+    .info-block__title {
+        margin-bottom: 1.5em;
+    }
+    .feature-block {
+        margin: 2rem 0;
+    }
+    .feature-list__item {
+        margin: 1rem 0;
+    }
+    .feature-list__item::marker {
+        color: var(--primary-color);
+    }
+    .card {
+        vertical-align: top;
+        display: inline-block;
+        margin: 0 3.75rem 0 0;
+        width: 17.5em;
+    }
+    .card__img {
+        width: 17.5em;
     }
 }
