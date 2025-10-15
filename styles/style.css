@@ -12,7 +12,7 @@
         --primary-color: light-dark(#66D4D4, #4a9797);
         --secondary-color: light-dark(#FFF,#4b4b4b);
         --text-color:  light-dark(#181818,#eeeded);
-        --bg-color: light-dark(#7c7b7b, #1f1e1e);
+        --bg-color: light-dark(#ffffff, #1f1e1e);
         
     }
     html {
