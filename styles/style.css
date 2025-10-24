@@ -60,6 +60,9 @@
         background-color: var(--primary-color);
         color: var(--text-color-light);
     }
+    .btn-center {
+        text-align: center;
+    }
     .img-fluid {
         display: block;
         width: 100%;
@@ -80,9 +83,12 @@
         font-size: 4rem;
         font-weight: extra-bold;
     }
-    h2{
+    h2 {
         font-size: 2.25rem;
         font-weight: bold;
+    }
+    .heading-h2 {
+        font-size: 32px;
     }
     .heading--h3 {
         font-size: 1.125em;
@@ -111,10 +117,42 @@
     .card {
         vertical-align: top;
         display: inline-block;
-        margin: 0 3.75rem 0 0;
+        margin: 12px;
         width: 17.5em;
     }
     .card__img {
         width: 17.5em;
+    }
+    .box-text {
+        text-align: center;
+        color: var(--header-text-color);
+    }
+    .cta-block {
+        background-color: var(--header-bg-color);
+        margin: 0;
+        padding: 2rem;
+        border: none;
+    }
+    .h2 {
+        font-family: "Open Sans";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+        color: var(--text-color);
+    }
+    .gallery {
+        box-sizing: border-box;
+        margin: -1em;
+    }
+    .gallery-item {
+        display: inline-block;
+        width: calc(50% - 2em);
+        vertical-align: top;
+        margin: 1em;
+    }
+    .gallery-item-w100 {
+        width: calc(100% - 2em);
     }
 }
